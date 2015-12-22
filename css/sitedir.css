@@ -1,0 +1,20 @@
+body > pre {
+    text-align: right;
+}
+body > pre a {
+    display: block;
+    background: #9E6666;
+    padding: 10px;
+    color: #FFF;
+    font-size: 24px;
+    text-align: left;
+    transition: all .5s ease;
+}
+
+body > pre a:hover {
+    background: #2F7749;
+}
+
+body > hr {
+    display: none;
+}

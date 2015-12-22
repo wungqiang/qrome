@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <title>Qrome</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="page-wrapper">
+            <div id="status"></div>
+            <img id="image-result" hidden>
+            <div>
+                <div id="qrcode-img"></div>
+                <div id="info">
+                    <textarea id="url" rows="9"></textarea>
+                </div>
+            </div>
+            <div id="menu">
+                <div class="menu-item active">
+                    <span class="menu-item-name">QProxy</span>
+                        <small class="menu-item-desc">浏览器代理设置&gt;</small>
+                        <div class="text-right" style="display:none">
+                            <div class="block-left">
+                                <ol>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                </ol>
+                        </div>
+                        <textarea rows="9" style="width: 160px;padding:0 5px;"></textarea>
+                    </div>
+                </div>
+            <div class="menu-item">
+            <span class="menu-item-name">QSubscribe</span>
+            <small class="menu-item-desc">查看订阅的文章&gt;</small>
+        </div>
+        <div class="menu-item">
+            <span class="menu-item-name">QSnippet</span>
+            <small class="menu-item-desc">常用的代码片段&gt;</small>
+        </div>
+        </div>
+            <div id="contact">
+                <h1 id="title">Qrome</h1>
+                <a href="http://doudong.de" id="contactMe"><small>联系我</small></a>
+            </div>
+        </div>
+
+        <script src="libs/qrcode.min.js"></script>
+        <script src="libs/doT.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <script id="loginForm" type="template">
+            <form method="POST">
+                <label for="username">用户名
+                <input id="username" name="username">
+                {{=it.dtest}}
+            </form>
+        </script>
+    </body>
+</html>
+
