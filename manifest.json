@@ -2,9 +2,9 @@
     "version": "1.0.0",
     "manifest_version": 2,
     "name": "Qrome",
-    "description": "front end utilities developed by wungqiang@gmail.com",
+    "description": "Front end utilities developed",
     "background": {
-        "scripts": ["js/main.js", "libs/doT.min.js"],
+        "scripts": ["libs/qrcode.min.js", "js/bg.js", "libs/doT.min.js"],
         "persistence": true
     },
     "icons": {
@@ -21,11 +21,12 @@
     "content_scripts":[
         {
             "matches": ["http://*/*", "https://*/*"],
-            "js": ["js/content.js"]
+            "js": ["libs/qrcode.min.js", "js/content.js"]
         }
     ],
     "permissions": [
         "tabs",
+        "storage",
         "contextMenus",
         "http://*/*",
         "https://*/*"

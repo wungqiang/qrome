@@ -92,7 +92,6 @@
   }
   #contact {
       padding: 10px;
-      border-top: 1px solid #BABABA;
       text-align: right;
   }
   #contact a {
@@ -104,3 +103,7 @@
     color: #AAA;
 }
 
+.divider {
+    height: 24px;
+    background: #EEE;
+}
