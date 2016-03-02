@@ -2,7 +2,7 @@
     "version": "1.0.0",
     "manifest_version": 2,
     "name": "Qrome",
-    "description": "Front end utilities developed",
+    "description": "Front-end chrome utility extension",
     "background": {
         "scripts": ["libs/qrcode.min.js", "js/bg.js", "libs/doT.min.js"],
         "persistence": true
